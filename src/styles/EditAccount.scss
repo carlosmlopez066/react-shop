@@ -1,6 +1,4 @@
-@import 'vars';
-
-.NewPass {
+.EditAccount {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -22,20 +20,16 @@
 
 .title {
     font-size: var(--lg);
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.subtitle {
-    color: var(--very-light-pink);
-    font-size: var(--md);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 32px;
-    text-align: center;
+    margin-bottom: 36px;
+    text-align: start;
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form div {
     display: flex;
     flex-direction: column;
 }
@@ -46,21 +40,17 @@
     margin-bottom: 4px;
 }
 
-.input {
-    background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
-    height: 30px;
+.value {
+    color: var(--very-light-pink);
     font-size: var(--md);
-    padding: 6px;
-    margin-bottom: 12px;
+    margin: 8px 0 32px 0;
 }
 
-.primary-button {
-    background-color: var(--hospital-green);
+.secondary-button {
+    background-color: var(--white);
     border-radius: 8px;
-    border: none;
-    color: var(--white);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
@@ -68,13 +58,18 @@
     height: 50px;
 }
 
-.NewPass-button {
+.EditAccount-button {
     margin-top: 14px;
     margin-bottom: 30px;
 }
 
 @media (max-width: 640px) {
-    .logo {
-        display: block;
+    .form-container {
+        height: 100%;
+    }
+
+    .form {
+        height: 100%;
+        justify-content: space-between;
     }
 }

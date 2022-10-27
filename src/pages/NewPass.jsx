@@ -4,7 +4,7 @@ import '../styles/NewPass.scss';
 
 const NewPass = () => {
     return (
-        <div className="login">
+        <div className="NewPass">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
                 <h1 className="title">Create a new password</h1>
@@ -14,7 +14,7 @@ const NewPass = () => {
                     <input type="password" id="password" placeholder="*********" className="input input-password" />
                     <label for="new-password" className="label">Password</label>
                     <input type="password" id="new-password" placeholder="*********" className="input input-password" />
-                    <input type="submit" value="Confirm" className="primary-button login-button" />
+                    <input type="submit" value="Confirm" className="primary-button NewPass-button" />
                 </form>
             </div>
         </div>

@@ -3,7 +3,7 @@ import '../styles/RecoveryPass.scss'
 
 const RecoveryPass = () => {
     return (
-        <div className="login">
+        <div className="RecoveryPass">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
@@ -14,7 +14,7 @@ const RecoveryPass = () => {
                     <img src="./icons/email.svg" alt="email" />
                 </div>
 
-                <button className="primary-button login-button">Login</button>
+                <button className="primary-button RecoveryPass-button">Login</button>
 
                 <p className="resend">
                     <span>Didn't receive the email?</span>
