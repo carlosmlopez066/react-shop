@@ -7,7 +7,8 @@ module.exports = {
     entry: './src/index.js', //punto de entrada de la app
     output: { //donde va a vivir el proyecto una vez este preparado
         path: path.resolve(__dirname, 'dist'), //path.resolve para saber donde nos encontramos, (dist) para indicar la carpeta que vamos a utilizar
-        filename: 'bundle.js' //filename para ponerle un nombre al empaquetado que va a suceder
+        filename: 'bundle.js',//filename para ponerle un nombre al empaquetado que va a suceder
+        publicPath: '/'
     },
     mode: 'development',
     resolve: { //para mencionar que extenciones y como vamos a trabajar nuestro proyecto
@@ -55,5 +56,6 @@ module.exports = {
         },
         compress: true,
         port: 3005,
+        historyApiFallback: true,
     }
 }
