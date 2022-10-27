@@ -11,14 +11,14 @@ module.exports = {
     },
     mode: 'development',
     resolve: { //para mencionar que extenciones y como vamos a trabajar nuestro proyecto
-        extensions: ['.js','.jsx'],
+        extensions: ['.js', '.jsx'],
     },
     module: { //vamos a trabajar las reglas que vamos a crear con nuestro loader y plugins
         rules: [
             {
                 test: /\.(js|jsx)$/, //identificar todos los archivos con extension .js o .jsx
                 exclude: /node_modules/, //excluir los archivos que queremos que no lea: node-modules
-                use:{
+                use: {
                     loader: 'babel-loader'
                 }
             },
@@ -31,7 +31,7 @@ module.exports = {
                 ]
             },
             {
-                test:/\.s[ac]ss$/,
+                test: /\.(css|scss)$/,
                 use: [
                     "style-loader",
                     "css-loader",
@@ -41,7 +41,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new  HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             template: './public/index.html', //donde esta ubicado el archivo que queresmos modificar
             filename: 'index.html' //nombre del archivo que se va a crear
         }),
