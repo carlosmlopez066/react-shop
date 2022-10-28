@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/NewPass.scss';
+import '@styles/NewPass.scss';
 
 
 const NewPass = () => {
