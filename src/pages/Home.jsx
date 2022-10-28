@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '@components/Header'
-import ProductList from '@components/ProductList';
+import ProductListContainer from '@containers/ProductList-container';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <BrowserRouter>
             <Header />
-            <ProductList />
+            <ProductListContainer />
         </BrowserRouter>
     );
 };
