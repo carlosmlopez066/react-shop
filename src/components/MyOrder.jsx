@@ -1,20 +1,22 @@
 import React from 'react';
-import '@styles/ProductOrder.scss'
-import IconClose from "@icons/icon_close.png"
-import flechitaClose from '@icons/flechita.svg'
-
-const ProductOrder = () => {
+import '@styles/MyOrder.scss'
+import close from '@icons/icon_close.png';
+const MyOrder = () => {
     return (
-        <div className="ProductOrder">
+        <div>
             <figure>
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
             </figure>
             <p>Bike</p>
             <p>$30,00</p>
-            <img src={IconClose} alt="close" />
-        </div >
+            {<img src={close} alt="close" />}
+        </div>
+
+
+
+
 
     );
 };
 
-export default ProductOrder;
+export default MyOrder;
